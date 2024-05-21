@@ -17,11 +17,11 @@ class LoadPost extends StatelessWidget {
             future: ob.getPost(),
             builder: (context, AsyncSnapshot<List<Post>> snapshot){
               if(snapshot.connectionState == ConnectionState.waiting){
-                return const CircularProgressIndicator();
+                return const CircularProgressIndicator(); // محمد عباس
               } else if(snapshot.connectionState == ConnectionState.done && snapshot.data!.isNotEmpty){
-                return PostsPage(posts: snapshot.data!);
+                return PostsPage(posts: snapshot.data!); // عبد الكريم ادريس
               } else {
-                return AlertDialog(
+                return AlertDialog( // لجين اسماعيل
                   title: const Text("Error"),
                   content: const Text("Please Try Again Later"),
                   actions: [

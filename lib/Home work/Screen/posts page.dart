@@ -14,7 +14,7 @@ class PostsPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Posts Page",style: TextStyle(
+          title: const Text("Posts Page",style: TextStyle( // يامن علاف
               color: Colors.white,
               fontWeight: FontWeight.w600,
               fontSize: 28
@@ -23,7 +23,7 @@ class PostsPage extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: ListView.builder(
-            itemCount: posts.length,
+            itemCount: posts.length, // يوسف ابو شنب
             itemBuilder: (context,i)=> Padding(
               padding: const EdgeInsets.only(left: 7,right: 7),
               child: PostItem(post: posts[i]),

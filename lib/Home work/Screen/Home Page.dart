@@ -23,13 +23,13 @@ class HomePage extends StatelessWidget {
         body: ListView(
           children: [
             const SizedBox(height: 150,),
-            const Center(child:Text("Welcome To The Home Page",style: TextStyle(
+            const Center(child:Text("Welcome To The Home Page",style: TextStyle(  // محمد بذارة
               fontSize: 28,
               fontWeight: FontWeight.w600,
               fontStyle: FontStyle.italic,
             ),)),
             const SizedBox(height: 20,),
-            const Center(child: Text("To See Our Post Click This Button", style: TextStyle(
+            const Center(child: Text("To See Our Post Click This Button", style: TextStyle( // اوس ديوب
               fontSize: 20,
               fontWeight: FontWeight.w500
             ),),),
@@ -38,11 +38,11 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/10,right:  MediaQuery.of(context).size.width/10),
               child: ElevatedButton(
                   onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const LoadPost()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const LoadPost()));// هادي الحامد
               },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange,
-                ), child: const Text("see our Post",style: TextStyle(
+                ), child: const Text("see our Post",style: TextStyle( //لمى ديوب
                 color: Colors.white
               ),),
               ),
